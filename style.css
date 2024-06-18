@@ -1,0 +1,34 @@
+div {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    animation: move 2s linear infinite;
+    
+  }
+@keyframes move {
+0% {
+    transform: translateX(0px);
+    background: blue;
+    animation-delay: 2s;
+  }
+  25% {
+    transform: translateX(200px);
+    background: red;
+    animation-delay: 2s;
+  }
+  50% {
+    transform: translateX(200px) translateY(200px);
+    background: green;
+    animation-delay: 2s;
+  }
+  75%{
+    transform: translateX(0px) translateY(200px);
+    background: yellow;
+    animation-delay: 2s;
+  }
+  100%{
+    transform: translateX(0px);
+    background: blue;
+    animation-delay: 2s;
+  }
+}
